@@ -1,0 +1,20 @@
+#birthYearOutput{
+color:rgb(249, 172, 172);
+font-weight: 600;
+}
+
+#genderOutput{
+    color:rgb(249, 172, 172);
+    font-weight: 700; 
+}
+
+.card{
+    background-color: rgb(111, 131, 132);  
+}
+.card-title,#firstNameOutput,h4,.result{
+    color:white;
+}
+
+#surnameOutput,#firstNameOutput,#middleNameeOutput,#professionsOutput{
+    color: rgb(48, 48, 48);
+}
