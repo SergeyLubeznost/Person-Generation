@@ -126,25 +126,25 @@ const personGenerator = {
         return obj.list[prop];
     },
      randomDate : function (mounthDateJson){
-    if (this.person.mounthDateJson === "Февраля"){
+        this.randomValue(this.mounthDateJson)
+    if (this.randomValue(this.mounthDateJson) === "Февраля"){
         return   this.randomIntNumber (max = 28, min = 1)+ " " + this.randomValue(this.mounthDateJson) + " "  + this.randomIntNumber (max = 1979, min = 2000)+ " " + " года рождения";
      }
-    if (this.person.mounthDateJson === "Апреля"){
+   else if (this.randomValue(this.mounthDateJson) === "Апреля"){
         return   this.randomIntNumber (max = 30, min = 1)+ " " + this.randomValue(this.mounthDateJson)+ " " + this.randomIntNumber (max = 1979, min = 2000)+ " " + " года рождения";
      }
-    if (this.person.mounthDateJson === "Июня"){
+     else if (this.randomValue(this.mounthDateJson) === "Июня"){
         return   this.randomIntNumber (max = 30, min = 1)+ " " + this.randomValue(this.mounthDateJson)+ " " + this.randomIntNumber (max = 1979, min = 2000)+ " " + " года рождения";
      }
-    if (this.person.mounthDateJson === "Августа"){
+     else if (this.randomValue(this.mounthDateJson) === "Августа"){
         return  this.randomIntNumber (max = 30, min = 1)+ " " + this.randomValue(this.mounthDateJson)+ " " + this.randomIntNumber (max = 1979, min = 2000)+ " " + " года рождения";
      }
-    if (this.person.mounthDateJson === "Ноября"){
+     else if (this.randomValue(this.mounthDateJson) === "Ноября"){
        return this.randomIntNumber (max = 30, min = 1)+ " " + this.randomValue(this.mounthDateJson)+ " " + this.randomIntNumber (max = 1979, min = 2000)+ " " + " года рождения";
      }else{
         return   this.randomIntNumber (max = 31, min = 1)+ " " + this.randomValue(this.mounthDateJson)+ " " + this.randomIntNumber (max = 1979, min = 2000)+ " " + " года рождения";
      
     }
-   // return this.randomIntNumber (max = 31, min = 1)+ " " + this.randomValue(this.mounthDateJson)+ " " + this.randomIntNumber (max = 1979, min = 2000)+ " " + " года рождения";
 },
 
     getPerson: function () {
