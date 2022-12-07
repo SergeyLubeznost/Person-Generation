@@ -126,23 +126,24 @@ const personGenerator = {
         return obj.list[prop];
     },
      randomDate : function (mounthDateJson){
-        this.randomValue(this.mounthDateJson)
-    if (this.randomValue(this.mounthDateJson) === "Февраля"){
-        return   this.randomIntNumber (max = 28, min = 1)+ " " + this.randomValue(this.mounthDateJson) + " "  + this.randomIntNumber (max = 1979, min = 2000)+ " " + " года рождения";
+       let months = this.randomValue(this.mounthDateJson)
+       let days;
+    if (months === "Февраля"){
+        return  days= this.randomIntNumber (max = 28, min = 1) + " " + months  + " "  + this.randomIntNumber (max = 1979, min = 2000)+ " " + " года рождения";
      }
-   else if (this.randomValue(this.mounthDateJson) === "Апреля"){
-        return   this.randomIntNumber (max = 30, min = 1)+ " " + this.randomValue(this.mounthDateJson)+ " " + this.randomIntNumber (max = 1979, min = 2000)+ " " + " года рождения";
+   else if (months === "Апреля"){
+        return  days= this.randomIntNumber (max = 30, min = 1) + " " + this.randomValue(this.mounthDateJson)+ " " + this.randomIntNumber (max = 1979, min = 2000)+ " " + " года рождения";
      }
-     else if (this.randomValue(this.mounthDateJson) === "Июня"){
-        return   this.randomIntNumber (max = 30, min = 1)+ " " + this.randomValue(this.mounthDateJson)+ " " + this.randomIntNumber (max = 1979, min = 2000)+ " " + " года рождения";
+     else if (months === "Июня"){
+        return  days= this.randomIntNumber (max = 30, min = 1) + " " + months + " " + this.randomIntNumber (max = 1979, min = 2000)+ " " + " года рождения";
      }
-     else if (this.randomValue(this.mounthDateJson) === "Августа"){
-        return  this.randomIntNumber (max = 30, min = 1)+ " " + this.randomValue(this.mounthDateJson)+ " " + this.randomIntNumber (max = 1979, min = 2000)+ " " + " года рождения";
+     else if (months === "Августа"){
+        return days= this.randomIntNumber (max = 30, min = 1) + " " + months + " " + this.randomIntNumber (max = 1979, min = 2000)+ " " + " года рождения";
      }
-     else if (this.randomValue(this.mounthDateJson) === "Ноября"){
-       return this.randomIntNumber (max = 30, min = 1)+ " " + this.randomValue(this.mounthDateJson)+ " " + this.randomIntNumber (max = 1979, min = 2000)+ " " + " года рождения";
+     else if (months === "Ноября"){
+       return days = this.randomIntNumber (max = 30, min = 1)+ " " + months + " " + this.randomIntNumber (max = 1979, min = 2000)+ " " + " года рождения";
      }else{
-        return   this.randomIntNumber (max = 31, min = 1)+ " " + this.randomValue(this.mounthDateJson)+ " " + this.randomIntNumber (max = 1979, min = 2000)+ " " + " года рождения";
+        return  days= this.randomIntNumber (max = 31, min = 1)+ " " + months + " " + this.randomIntNumber (max = 1979, min = 2000)+ " " + " года рождения";
      
     }
 },
